@@ -16,7 +16,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
   height: 100%;
   overflow-y: auto;
   width: v.$sidebar-width;
-  background: var(--sidebar-bg);
+  /* background: var(--sidebar-bg); */
+  background: url('/assets/img/background.jpg');
   border-right: 1px solid var(--sidebar-border-color);
 
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -106,12 +107,14 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
     margin-top: 1.25rem;
     margin-bottom: 0.5rem;
     width: fit-content;
-    color: var(--site-title-color);
+    /* color: var(--site-title-color); */ // default
+    color: rgb(0, 0, 0);
   }
 
   .site-subtitle {
     font-size: 95%;
-    color: var(--site-subtitle-color);
+    /* color: var(--site-subtitle-color); */ // default
+    color: rgb(0, 0, 0);
     margin-top: 0.25rem;
     word-spacing: 1px;
     -webkit-user-select: none;
@@ -142,24 +145,30 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
         font-weight: 600;
 
         &:hover {
-          background-color: var(--sidebar-hover-bg);
+          /* background-color: var(--sidebar-hover-bg); */
+          background-color: rgb(245, 245, 245);
         }
 
+        /* i : 사이드바 카테고리 아이콘 설정 */
         i {
           font-size: 95%;
           opacity: 0.8;
           margin-right: 1.5rem;
+          color: rgb(0, 0, 0);
         }
 
+        /* span : 사이드바 카테고리 글씨 설정 */
         span {
           font-size: 90%;
           letter-spacing: 0.2px;
+          color: rgb(0, 0, 0); // font color
         }
       }
 
       &.active {
         .nav-link {
-          color: var(--sidebar-active-color);
+          /* color: var(--sidebar-active-color); */ 
+          color: rgb(0, 0, 0);
           background-color: var(--sidebar-hover-bg);
 
           span {
