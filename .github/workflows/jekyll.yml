@@ -40,7 +40,7 @@ jobs:
           ruby --version
       - name: Install Bundler
         run: |
-          gem install bundler
+          sudo gem install bundler
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
