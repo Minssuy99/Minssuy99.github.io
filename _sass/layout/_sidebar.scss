@@ -169,7 +169,8 @@ $sidebar-display: 'sidebar-display'; /* the attribute for sidebar display */
         .nav-link {
           /* color: var(--sidebar-active-color); */ 
           color: rgb(0, 0, 0);
-          background-color: var(--sidebar-hover-bg);
+          /*background-color: var(--sidebar-hover-bg);*/
+          background-color: rgb(150, 150, 150);
 
           span {
             opacity: 1;
