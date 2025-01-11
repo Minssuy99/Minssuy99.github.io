@@ -1,5 +1,9 @@
 # The Site Configuration
 
+# pulgins
+plugins:
+   - jekyll-target-blank
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -32,18 +36,18 @@ github:
   # username: twitter_username # change to your Twitter username
 
 instagram:
-username: minssuy99
+  username: minssuy99
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: MinSeong-Kim
+  name: Minssuy99
   email: mkm6302@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     # - https://twitter.com/username # change to your Twitter homepage
     - https://github.com/Minssuy99 # change to your GitHub homepage
-    - https://www.instagram.com/minssuy99/ # change to your Instagram homepage
+    - https://www.instagram.com/minssuy99 # change to your Instagram homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
