@@ -5,6 +5,7 @@ date:   2025-01-08 19:16:19 +0900
 categories: jekyll update
 image:
   path: /assets/img/background.jpg
+  lqip : data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAgEAABBAEEAwAAAAAAAAAAAAACAAEDBAUGBxESITFh/8QAFQEBAQAAAAAAAAAAAAAAAAAABgf/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQISEzFR/9oADAMBAAIRAxEAPwCTbVbgZbXuhqZZexHckoucEJlXjE2Ds78EQizl5f2XL/URFS8klpgmkeH/2Q==
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

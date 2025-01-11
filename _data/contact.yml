@@ -13,6 +13,9 @@
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
+- type: instagram
+  icon: "fab fa-intagram"
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon

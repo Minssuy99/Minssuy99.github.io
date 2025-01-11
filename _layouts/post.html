@@ -15,6 +15,7 @@ script_includes:
 {% include toc-status.html %}
 
 <article class="px-1" data-toc="{{ enable_toc }}">
+
   <header>
     <h1 data-toc-skip>{{ page.title }}</h1>
     {% if page.description %}
@@ -22,39 +23,8 @@ script_includes:
     {% endif %}
 
     <div class="post-meta text-muted">
-      <!-- published date -->
-      <span>
-        {{ site.data.locales[lang].post.posted }}
-        {% include datetime.html date=page.date tooltip=true lang=lang %}
-      </span>
-
-      <!-- lastmod date -->
-      {% if page.last_modified_at and page.last_modified_at != page.date %}
-        <span>
-          {{ site.data.locales[lang].post.updated }}
-          {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
-        </span>
-      {% endif %}
-
-      {% if page.image %}
-        {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
-        {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
-        {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
-
-        {% if page.image.lqip %}
-          {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}
-        {% endif %}
-
-        <div class="mt-3 mb-3">
-          <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip }}>
-          {%- if page.image.alt -%}
-            <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
-          {%- endif -%}
-        </div>
-      {% endif %}
-
-      <div class="d-flex justify-content-between">
-        <!-- author(s) -->
+      <!-- 작성자 -->
+      <div>
         <span>
           {% if page.author %}
             {% assign authors = page.author %}
@@ -79,9 +49,26 @@ script_includes:
             {% endif %}
           </em>
         </span>
+      </div>
+
+      <!-- 포스팅 날짜, 업데이트 날짜와 방문자 수 + 읽는 속도 -->
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <span>
+            {{ site.data.locales[lang].post.posted }}
+            {% include datetime.html date=page.date tooltip=true lang=lang %}
+          </span>
+
+          {% if page.last_modified_at and page.last_modified_at != page.date %}
+            <span>
+              {{ site.data.locales[lang].post.updated }}
+              {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
+            </span>
+          {% endif %}
+        </div>
 
         <div>
-          <!-- pageviews -->
+          <!-- 방문자 수 -->
           {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
             <span>
               <em id="pageviews">
@@ -91,10 +78,27 @@ script_includes:
             </span>
           {% endif %}
 
-          <!-- read time -->
+          <!-- 읽는 속도 -->
           {% include read-time.html content=content prompt=true lang=lang %}
         </div>
       </div>
+
+      {% if page.image %}
+        {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
+        {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
+        {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
+        
+        {% if page.image.lqip %}
+          {%- capture lqip -%}lqip="{{ page.image.lqip }}"{%- endcapture -%}
+        {% endif %}
+
+        <div class="mt-3 mb-3">
+          <img {{ src }} {{ class }} {{ alt }} w="1200" h="630" {{ lqip }}>
+          {%- if page.image.alt -%}
+            <figcaption class="text-center pt-2 pb-2">{{ page.image.alt }}</figcaption>
+          {%- endif -%}
+        </div>
+      {% endif %}
     </div>
   </header>
 
@@ -153,12 +157,7 @@ script_includes:
       </div>
     {% endif %}
 
-    <div
-      class="
-        post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
-      "
-    >
+    <div class="post-tail-bottom d-flex justify-content-between align-items-center mt-5 pb-2">
       <div class="license-wrapper">
         {% if site.data.locales[lang].copyright.license.template %}
           {% capture _replacement %}
@@ -184,5 +183,5 @@ script_includes:
         theme="photon-dark"
         crossorigin="anonymous"
         async>
-</script>
+  </script>
 </article>
