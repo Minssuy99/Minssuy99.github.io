@@ -3,6 +3,9 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2025-01-08 19:16:19 +0900
 categories: jekyll update
+image:
+  path: /assets/img/background.jpg
+  alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
