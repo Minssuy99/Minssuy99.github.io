@@ -33,16 +33,16 @@
   );
 
   /* Sidebar */
-  --site-title-color: rgb(113, 113, 113);
-  --site-subtitle-color: #717171;
+  --site-title-color: rgb(255, 255, 255);
+  --site-subtitle-color: #ffffff;
   --sidebar-bg: url('/assets/img/light_background.jpg');// #f6f8fa;
-  --sidebar-border-color: #efefef;
-  --sidebar-muted-color: #545454;
-  --sidebar-active-color: #1d1d1d;
-  --sidebar-hover-bg: rgb(223, 233, 241, 0.64);
-  --sidebar-btn-bg: white;
-  --sidebar-btn-color: #8e8e8e;
-  --avatar-border-color: white;
+  --sidebar-border-color: #efefef; // 사이드바 ↔ 메인뷰 테두리 색상
+  --sidebar-muted-color: #000000; // 활성화 되지 않은 카테고리들의 아이콘 및 글씨 색상
+  --sidebar-active-color: rgb(0, 0, 0); // 활성화 된 카테고리의 아이콘 및 글씨 색상
+  --sidebar-hover-bg: rgb(245, 245, 245); // 마우스 커서를 위로 올렸을 때의 색상
+  --sidebar-btn-bg: white; // 좌측 하단의 아이콘 배경 색상
+  --sidebar-btn-color: rgb(0, 0, 0); // 좌측 하단의 아이콘 색상
+  --avatar-border-color: rgb(255, 255, 255); // 프로필 사진 테두리 색상
 
   /* Topbar */
   --topbar-bg: rgb(255, 255, 255, 0.7);
