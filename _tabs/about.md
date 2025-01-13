@@ -8,8 +8,9 @@ order: 4
 
 # Hello there 👋
 
+<br>
 
-#### Welcome to my blog. My name is MinSeong-Kim.
+#### Welcome to my blog. I'm MinSeong-Kim.
 
 #### I'm studying to become a game developer.
 
