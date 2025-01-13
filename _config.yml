@@ -155,7 +155,7 @@ pwa:
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
+paginate: 5 # 한 페이지에 보여질 게시글의 수
 
 # The base URL of your site
 baseurl: ""

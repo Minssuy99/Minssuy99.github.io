@@ -4,10 +4,15 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+![Main View](/assets/img/avatar_circle.png){: width="250" height="250" }
+
+# Hello there 👋
 
 
-my test
+#### Welcome to my blog. My name is MinSeong-Kim.
 
-hell world
+#### I'm studying to become a game developer.
+
+#### This is a blog that I organized based on what I learned, not for sharing purposes.
+
+#### Please feel free to look around and have a good time.
