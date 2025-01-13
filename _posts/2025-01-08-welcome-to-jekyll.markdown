@@ -4,7 +4,7 @@ title:  "Welcome to Jekyll!"
 date:   2025-01-08 19:16:19 +0900
 categories: jekyll update
 image:
-  path: /assets/img/background.jpg
+  path: /assets/img/dark_background.jpg
   lqip : data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAADAAUDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAgEAABBAEEAwAAAAAAAAAAAAACAAEDBAUGBxESITFh/8QAFQEBAQAAAAAAAAAAAAAAAAAABgf/xAAaEQACAgMAAAAAAAAAAAAAAAAAAQISEzFR/9oADAMBAAIRAxEAPwCTbVbgZbXuhqZZexHckoucEJlXjE2Ds78EQizl5f2XL/URFS8klpgmkeH/2Q==
   alt: Responsive rendering of Chirpy theme on multiple devices.
 ---
