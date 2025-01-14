@@ -1,6 +1,6 @@
 ---
-title: Chirpy 테마를 이용한 Github Pages 제작 [2]
-description: Repository 생성 및 Ruby, Jekyll 설치
+title: Chirpy 테마를 이용한 Github Pages 개설 [2]
+description: 로컬 서버 생성 및 테마 적용
 author: Minssuy99
 date: 2025-01-14 00:00:00 +0900
 categories: [Github Pages]
@@ -9,8 +9,17 @@ pin: false
 # math: false
 # mermaid: false
 image:
-  path: '/thumbnails/Jekyll.jpg'
+  path: '/Jekyll.jpg'
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAZADIDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAEHAgMICf/EACUQAAICAgEFAAEFAAAAAAAAAAECAAMEBREGBxITIVEIFCIxYf/EABcBAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAeEQEAAgICAwEAAAAAAAAAAAABAAIDIRExQWFxgf/aAAwDAQACEQMRAD8A8y4iSiNY6qqszMeAAOSTESIlhdC9m9RstNq87qjqjF6bXY51XjgsrHPt15DM2Ui+JVVf12JWXP1/WWT1We5bETtD2yyO4zfu7qbMHdY2NnYfT+qyMvGydZiBaLnDNkGyxsqypbAykugSzIuqDFcSq+bWKja3ROuHDkzZK4cQ2tZADtXQHtZzyG8h8iWJ+q3uXqu7Pf3f7jQ9OaXpPRq1OBg6vVhGx6K8elKPP2Kqm5rGra1rWAZzZzwo4Va7mjycyMlGlmj41pE/E0/TTERE2TEEciIiJJdmtZyzF2byZif5E/kn8/7M8fKtxMkXU2203KxcWI5Vwx/s8j7z9P2a4iIA8RwIiIiIiIif/9k=
   # alt:
-media_subpath: '/assets/img'
+media_subpath: '/assets/img/Github Pages'
 ---
+<!--------------------------------------yaml-------------------------------------->
+
+{% include embed/bookmark.html
+url="https://minssuy99.github.io/posts/Jekyll_Chirpy_-1/"
+title="Chirpy 테마를 이용한 Github Pages 개설 [1]"
+description="Repository 생성 및 클론, Ruby 와 Jekyll 설치" %}
+
+> An example showing the `danger` type prompt.
+{: .prompt-danger }

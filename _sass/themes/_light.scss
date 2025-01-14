@@ -110,6 +110,14 @@
   --code-header-icon-color: #c9c8c8;
   --clipboard-checked-color: #43c743;
 
+  /* Bookmark */
+  --bookmark-bg-color: rgb(114,144,181);
+  --bookmark-title-color: rgb(255, 255, 255);
+  --bookmark-description-color: rgb(255, 255, 255);
+  --bookmark-hover-title-color: rgb(255,255,255);
+  --bookmark-hover-description-color: rgb(255,255,255);
+  --bookmark-hover-bg-color: rgb(73, 102, 134);
+
   [class^='prompt-'] {
     --link-underline-color: rgb(219, 216, 216);
   }
