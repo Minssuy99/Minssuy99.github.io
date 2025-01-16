@@ -219,7 +219,7 @@ npx --no -- commitlint --edit $1
 ## _**3. Node.js 및 npm 설치**_
 ---
 
-현재 목차 2번까지 진행한 상태에서 _`bundle exec jekyll server`_ 을 실행하게 된다면
+현재 목차 2번까지 진행한 상태에서 _`bundle exec jekyll server`_ 을 실행했을 때
 
 아래와 같은 에러메세지가 발생하는 분들이 계실겁니다.
 
@@ -239,7 +239,7 @@ description="Node.js 를 설치하기 위해서 여기를 클릭하세요." %}
 
 <br>
 
-Node.js 를 설치하셨다면, npm 도 함께 설치됩니다.
+`Node.js` 를 설치하셨다면, `npm` 도 함께 설치됩니다.
 
 설치를 해주신 뒤, `터미널` 을 실행하여 아래의 명령어를 입력했을 때, 아래와 같이 출력되면 성공입니다.
 
