@@ -149,7 +149,7 @@ ruby 3.2.2 (2023-03-30 revision e51014f9c0) [x64-mingw-ucrt]
 
 **1. 터미널 실행 후 명령어 입력**
 
-`cmd` 혹은 `터미널` 을 실행하신 뒤, 아래와 같이 명령어를 입력 후 실행합니다.
+`cmd` 혹은 `PowerShell` 을 실행하신 뒤, 아래와 같이 명령어를 입력 후 실행합니다.
 
 ```bash
 $ gem install jekyll
@@ -170,7 +170,8 @@ $ gem install bundler
 ```bash
 $ jekyll -v
 jekyll 4.3.4
-
+```
+```bash
 $ bundler -v
 Bundler version 2.6.2
 ```
