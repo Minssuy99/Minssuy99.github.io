@@ -53,7 +53,7 @@ media_subpath: '/assets/img/Github Pages'
 
 **1. Repository 생성하기**
 
-Github 의 우측 위에 보이는 <kbd>+</kbd> 를 클릭 후, <kbd>New repository</kbd> 를 선택합니다
+Github 의 우측 위에 보이는 <kbd>+</kbd> 를 클릭 후, <kbd>New repository</kbd> 를 선택합니다.
 
 ![Github](./new_repository_button.jpg)
 
@@ -76,6 +76,10 @@ Github 의 우측 위에 보이는 <kbd>+</kbd> 를 클릭 후, <kbd>New reposit
 생성위치는 바탕화면으로 하고 설명을 진행하겠습니다.
 
 ![Github](./clone_git_repository.jpg)
+
+마치셨다면, 바탕화면에 `username.github.io` 라는 빈 폴더가 생성되면 성공입니다.
+
+제 폴더의 이름은 `Minssuy99.github.io` 가 되겠네요.
 
 <br>
 
@@ -170,7 +174,7 @@ Bundler version 2.6.2
 
 
 
-### Reference
+### _**Reference**_
 
 * [프로의 개발일지](https://devpro.kr/)
 * [하얀눈길 블로그](https://www.irgroup.org/)
