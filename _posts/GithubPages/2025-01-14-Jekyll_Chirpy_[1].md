@@ -117,7 +117,7 @@ media_subpath: '/assets/img/Github Pages'
 
 위 링크를 클릭하여 사이트에 접속한 뒤, 원하시는 버전을 선택 후 설치해주세요.
 
-저는 <kbd>Ruby+Devkit 3.3.2-1 (x64)</kbd> 를 설치하였으며, 이를 권장합니다.
+저는 <kbd>Ruby+Devkit 3.2.2-1 (x64)</kbd> 를 설치하였으며, 이를 권장합니다.
 
 이러한 이유는, `Github Pages` 에서 `Ruby 3.3.4v` 이상의 버전을 지원하지 않기 때문입니다.
 

@@ -115,7 +115,7 @@ $ bundle install
 `install` 이 완료되었다면, 아래의 명령어를 입력하여 로컬 서버를 실행합니다.
 
 ```bash
-$ bundle exec jekyll serve
+$ bundle exec jekyll server
 ```
 
 ![jekyll](bundle_exec_jekyll_server.jpg)
@@ -216,6 +216,7 @@ npx --no -- commitlint --edit $1
 
 <br>
 
+<!--------------------------------------header3-------------------------------------->
 ## _**3. Node.js 및 npm 설치**_
 ---
 
