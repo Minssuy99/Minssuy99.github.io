@@ -105,6 +105,9 @@ media_subpath: '/assets/img/Github Pages'
 ## _**2. Ruby 설치**_
 ---
 
+> `Ruby` 설치 시, 기본으로 설정된 경로로 설치해주시기 바랍니다.
+{: .prompt-warning }
+
 > `Ruby` 는 `3.3.4` 이상의 버전을 설치하지 마시기 바랍니다.
 {: .prompt-danger }
 
