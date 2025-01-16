@@ -53,13 +53,15 @@ media_subpath: '/assets/img/Github Pages'
 
 **1. Repository 생성하기**
 
-Github 의 우측 위에 보이는 <kbd>+</kbd> 를 클릭 후, <kbd>New repository</kbd> 를 선택합니다.
+`Github` 의 우측 위에 보이는 <kbd>+</kbd> 를 클릭 후, <kbd>New repository</kbd> 를 선택합니다.
 
 ![Github](./new_repository_button.jpg)
 
 클릭 시 아래와 같은 화면이 나타나게 됩니다.
 
 ![Github](./Creat_a_new_repository.jpg)
+
+`Repository name *` 에 `{username}.github.io` 를 입력합니다.
 
 `username` 은 `Github` 에 로그인 하실 때 입력하시는 `ID` 입니다.
 
@@ -71,11 +73,27 @@ Github 의 우측 위에 보이는 <kbd>+</kbd> 를 클릭 후, <kbd>New reposit
 
 **2. 생성한 Repository 를 Clone 하기**
 
-`VS Code` 를 실행하신 후, <kbd>Clone Git Repository...</kbd> 를 클릭하여 클론합니다.
+`Clone` 하기 위해선, `VS Code` 는 `github` 의 계정에 로그인 되어 있어야합니다.
+
+좌측 아래에 프로필 아이콘을 클릭하여 `github` 로 로그인해주세요.
+
+`VS Code` 를 실행하신 후, <kbd>Clone Git Repository...</kbd> 를 클릭합니다.
+
+<kbd>Clone Git Repository...</kbd> 를 누르신 뒤, `VS Code` 의 상단의 <kbd>Clone from GitHub</kbd> 를 눌러주세요.
+
+![Github](./clone_git_repository.jpg)
+
+<br>
+
+그럼 아까 전 저희가 생성해두었던 `{username}.github.io` 가 선택창에 나타나게 됩니다.
+
+![Github](./click_my_repository.jpg)
+
+해당 `Repository` 를 클릭 시, 저장위치를 설정 할 수 있습니다.
 
 생성위치는 바탕화면으로 하고 설명을 진행하겠습니다.
 
-![Github](./clone_git_repository.jpg)
+
 
 마치셨다면, 바탕화면에 `username.github.io` 라는 빈 폴더가 생성되면 성공입니다.
 

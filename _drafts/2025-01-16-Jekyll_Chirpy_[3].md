@@ -1,8 +1,8 @@
 ---
 title: Chirpy 테마를 이용한 Github Pages 개설 [3]
-description: 로컬 서버 생성 및 테마 적용
+description: 테마 커스터마이징
 author: Minssuy99
-date: 2025-01-14 00:03:00 +0900
+date: 2025-01-16 20:54:00 +0900
 categories: [Github Pages]
 tags: [Jekyll, Chirpy]
 pin: false
@@ -14,3 +14,27 @@ image:
   # alt:
 media_subpath: '/assets/img/Github Pages'
 ---
+<!--------------------------------------yaml-------------------------------------->
+
+> 본 게시물은 `Windows 10` 환경에서 진행됨을 알려드립니다.
+{: .prompt-info }
+
+> `25.01.14` 일자 기준으로 진행하며, `Chirpy` 의 버전은 `7.2.4v` 입니다.
+{: .prompt-info }
+
+## _**북마크**_
+---
+
+{% include embed/bookmark.html
+url="https://minssuy99.github.io/posts/Jekyll_Chirpy_-1/"
+title="Chirpy 테마를 이용한 Github Pages 개설 [1]"
+description="Repository 생성 및 클론, Ruby 와 Jekyll 설치" %}
+
+{% include embed/bookmark.html
+url="https://minssuy99.github.io/posts/Jekyll_Chirpy_-2/"
+title="Chirpy 테마를 이용한 Github Pages 개설 [2]"
+description="로컬 서버 생성 및 테마 설치" %}
+
+> ☝ 위의 단계를 진행하지 않으신 분들께서는 위 링크를 클릭하여 이전 글을 확인해주시기 바랍니다.
+
+이번 글에선 테마를 커스터마이징을 하고, `github` 에 업로드하여 배포를 하는 과정을 설명하겠습니다.
