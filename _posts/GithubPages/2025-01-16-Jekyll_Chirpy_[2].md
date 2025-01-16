@@ -154,7 +154,7 @@ title="More Jekyll Themes"
 description="다른 테마를 알아보고 싶으신 분들은 여기를 클릭하세요." %}
 
 {% include embed/bookmark.html
-url="http://jekyllthemes.org/"
+url="https://github.com/cotes2020/jekyll-theme-chirpy"
 title="Jekyll Chirpy Theme"
 description="Chirpy 테마를 다운로드 하기 위해 여기를 클릭하세요." %}
 
