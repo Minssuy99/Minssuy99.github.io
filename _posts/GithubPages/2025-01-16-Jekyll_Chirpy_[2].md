@@ -220,19 +220,6 @@ npx --no -- commitlint --edit $1
 ## _**3. Node.js 및 npm 설치**_
 ---
 
-현재 목차 2번까지 진행한 상태에서 _`bundle exec jekyll server`_ 을 실행했을 때
-
-아래와 같은 에러메세지가 발생하는 분들이 계실겁니다.
-
-> assets/js/dist/*.min.js Not Found
-{: .prompt-danger}
-
-이는 _`username.github.io/assets/js`_ 내부에 `dist` 폴더 및 `js` 파일이 존재하지 않아 발생하는 오류입니다.
-
-<br>
-
-이를 해결하기 위해서 `Node.js` 및 `npm` 을 설치합니다.
-
 {% include embed/bookmark.html
 url="https://nodejs.org/ko"
 title="Node.js"
