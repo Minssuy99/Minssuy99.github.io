@@ -47,7 +47,17 @@ description="로컬 서버 생성 및 테마 설치" %}
 
 ![VS Code](open_folder.jpg)
 
-사이드바에서 _`config.yml`_ 을 클릭합니다.
+사이드바에서 _`_config.yml`_ 을 클릭합니다.
 
 ![VS Code](select_config.jpg)
 
+_`_confing.yml`_ 파일을 수정하여 블로그 설정을 할 수 있습니다.
+
+
+
+
+### _**Reference**_
+
+* [프로의 개발일지](https://devpro.kr/)
+* [하얀눈길 블로그](https://www.irgroup.org/)
+* [걷는보리](https://walkbori.com/)
