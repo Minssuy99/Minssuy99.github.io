@@ -197,6 +197,7 @@ description="Chirpy 테마를 다운로드 하기 위해 여기를 클릭하세�
 * _`404.html`_ 파일 삭제
 * _`about.markdown`_ 파일 삭제
 * _`index.markdown`_ 파일 삭제
+* _`Gemfile.lock`_ 파일 삭제
 
 <br>
 
@@ -243,17 +244,57 @@ $ npm -v
 
 <br>
 
+### _**npm -v 명령어가 실행되지 않을 경우**_
+
+`npm -v` 명령 실행 시 아래와 같은 오류가 나타나는 분들이 있을 수 있습니다.
+
+> npm : 이 시스템에서 스크립트를 실행할 수 없으므로 C:\Program Files\nodejs\npm.ps1 파일을 로드할 수 없습니다. <br> 자세한 내용은 about_Execution_Policies(https://go.microsoft.com/fwlink/?LinkID=135170)를 참조하십시오.
+{: .prompt-danger}
+
+이는 `PowerShell` 의 실행 정책 때문에 발생한 오류입니다.
+
+실행 정책을 변경하기 위해서, `PowerShell` 을 **관리자권한** 으로 실행 후, 아래의 명령을 실행해주세요.
+
+```bash
+Set-ExecutionPolicy RemoteSigned
+```
+
+이후 아래의 명령어를 실행시키면 정상적으로 출력됩니다.
+
+```bash
+npm -v
+```
+<br>
+
 이후 `PowerShell`을 통해서 프로젝트의 루트 디렉토리로 이동합니다.
 
 ```bash
 $ cd .\Desktop\username.github.io\
 ```
 
-아래의 명령어를 순서대로 실행해주시면 됩니다.
+<br>
+
+루트 디렉토리로 이동하셨다면, 아래의 명령어를 순서대로 실행해주시면 됩니다.
 
 ```bash
 $ npm install
 $ npm run build
+```
+<br>
+
+추가적으로 `Bootstrap` 이라는 것도 설치해주겠습니다.
+
+```bash
+$ npm install bootstrap
+```
+
+`Bootstrap` 이 정상적으로 설치되었는지 확인하기 위해서는 아래의 명령어로 알 수 있습니다.
+
+```bash
+$ npm list bootstrap
+
+jekyll-theme-chirpy@7.2.4 C:\Users\MinSeong\Desktop\Minssuy99.github.io
+`-- bootstrap@5.3.3
 ```
 
 아래 사진과 같이 `dist` 폴더 및 파일들이 생성되었다면 성공입니다.
@@ -261,6 +302,14 @@ $ npm run build
 ![jekyll](dist.jpg)
 
 <br>
+
+여기까지 진행되었다면 한번 더 아래의 명령어를 실행시켜줍니다.
+
+```bash
+$ bundle install
+$ bundle update
+$ bundle install
+```
 
 이후 아래의 명령어를 실행 후 로컬서버로 접속합니다.
 
