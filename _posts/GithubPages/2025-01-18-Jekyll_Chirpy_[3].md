@@ -3,7 +3,7 @@ title: Chirpy 테마를 이용한 Github Pages 개설 [3]
 description: 테마 커스터마이징 및 배포
 author: Minssuy99
 date: 2025-01-18 22:45:00 +0900
-categories: [Github Pages]
+categories: [Github Pages, Chirpy]
 tags: [Jekyll, Chirpy]
 pin: false
 # math: false

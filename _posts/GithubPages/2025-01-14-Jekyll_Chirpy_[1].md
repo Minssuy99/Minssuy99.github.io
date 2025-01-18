@@ -3,7 +3,7 @@ title: Chirpy 테마를 이용한 Github Pages 개설 [1]
 description: Repository 생성 및 클론, Ruby 와 Jekyll 설치
 author: Minssuy99
 date: 2025-01-14 00:00:00 +0900
-categories: [Github Pages]
+categories: [Github Pages, Chirpy]
 tags: [Jekyll, Chirpy]
 pin: false
 # math: false

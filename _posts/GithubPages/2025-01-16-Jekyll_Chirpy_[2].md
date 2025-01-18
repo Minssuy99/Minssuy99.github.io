@@ -3,7 +3,7 @@ title: Chirpy 테마를 이용한 Github Pages 개설 [2]
 description: 로컬 서버 생성 및 테마 설치
 author: Minssuy99
 date: 2025-01-16 12:54:00 +0900
-categories: [Github Pages]
+categories: [Github Pages, Chirpy]
 tags: [Jekyll, Chirpy]
 pin: false
 # math: false
