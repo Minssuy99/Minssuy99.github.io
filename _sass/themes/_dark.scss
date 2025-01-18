@@ -100,15 +100,15 @@
 
   /* Code highlight colors */
   --language-border-color: #2d2d2d;
-  --highlight-bg-color: #151515;
-  --highlighter-rouge-color: #c9def1;
-  --highlight-lineno-color: #808080;
-  --inline-code-bg: rgba(255, 255, 255, 0.05);
+  --highlight-bg-color: rgb(130, 130, 136);// #151515; // 코드블럭 상단색
+  --highlighter-rouge-color: #c9def1; // 인라인 글씨색
+  --inline-code-bg: rgba(255, 255, 255, 0.05); // 인라인 배경색
+  --highlight-lineno-color: #808080; // 코드블럭 라인넘버 색
   --code-color: #b0b0b0;
-  --code-header-text-color: #6a6a6a;
+  --code-header-text-color: #000000; //#6a6a6a; // 코드블럭 타이틀 색
   --code-header-muted-color: #353535;
-  --code-header-icon-color: #565656;
-  --clipboard-checked-color: #2bcc2b;
+  --code-header-icon-color: #000000; // #565656; // 코드블럭 아이콘 색
+  --clipboard-checked-color: #000000;
   --filepath-text-color: #cacaca;
 
   /* Bookmark */

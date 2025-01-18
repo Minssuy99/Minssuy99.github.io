@@ -10,7 +10,7 @@ order: 4
 
 <br>
 
-#### Welcome to my blog. I'm MinSeong-Kim.
+#### Welcome to my blog. I'm Minssuy99.
 
 #### I'm studying to become a game developer.
 
