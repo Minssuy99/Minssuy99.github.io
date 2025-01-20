@@ -15,7 +15,7 @@ image:
 media_subpath: '/assets/img/Unity'
 ---
 
-## BookMark
+## Bookmark
 ---
 
 {% include embed/bookmark.html
