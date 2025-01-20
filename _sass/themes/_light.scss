@@ -2,7 +2,7 @@
   /* Framework color */
   --main-bg: white;
   --mask-bg: #c1c3c5;
-  --main-border-color: #f3f3f3;
+  --main-border-color: rgb(115,145,180); // #f3f3f3; // 구분선 색상
 
   /* Common color */
   --text-color: #34343c;
@@ -66,8 +66,8 @@
   --card-shadow: rgb(104, 104, 104, 0.05) 0 2px 6px 0,
     rgba(211, 209, 209, 0.15) 0 0 0 1px;
   --footnote-target-bg: lightcyan;
-  --tb-odd-bg: #fbfcfd;
-  --tb-border-color: #eaeaea;
+  --tb-odd-bg: #fbfcfd; // 테이블(표)의 홀수번째 색상
+  --tb-border-color: #eaeaea; // 테이블(표)의 구분선 색
   --dash-color: silver;
   --kbd-wrap-color: #bdbdbd;
   --kbd-text-color: var(--text-color);

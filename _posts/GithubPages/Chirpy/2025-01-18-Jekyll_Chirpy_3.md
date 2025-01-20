@@ -61,18 +61,18 @@ _`_config.yml`_ 파일을 수정하여 블로그 설정을 할 수 있습니다.
 
 _`_config.yml`_ 파일에서 <kbd>Ctrl</kbd> + <kbd>F</KBD> 키를 눌러 옵션을 빠르게 검색할 수 있습니다.
 
-| Options            | Description                  | Example |
-|---------------------|---------------------------------|-----------|
-| lang        | 블로그의 언어를 설정합니다. | en, kr |
-| timezone    | 블로그의 시간을 설정합니다. | Asia/Seoul |
-| title       | 블로그의 제목을 설정합니다. | Minssuy99 |
-| tagline     | 블로그의 부제목을 설정합니다. | Game Developer |
-| description | 블로그 링크 공유 시 나타나는 설명글을 설정합니다. | Hello, there |
-| url | `Repository` 의 이름과 똑같이 설정해주세요. | https://username.github.io |
-| theme_mode | 블로그의 테마를 설정합니다. | light, dark |
-| avatar | 사이드바의 프로필을 설정합니다. | /assets/img/avatar.jpg |
-| social_preview_image | 링크 공유 시 나타나는 사진을 설정합니다. | /asssets/img/seo.jpg |
-| paginate | 한 페이지에 나타낼 최대 게시물 수를 설정합니다. | 5 |
+| Options              | Description                                       | Example                    |
+|----------------------|---------------------------------------------------|----------------------------|
+| lang                 | 블로그의 언어를 설정합니다.                       | en, kr                     |
+| timezone             | 블로그의 시간을 설정합니다.                       | Asia/Seoul                 |
+| title                | 블로그의 제목을 설정합니다.                       | Minssuy99                  |
+| tagline              | 블로그의 부제목을 설정합니다.                     | Game Developer             |
+| description          | 블로그 링크 공유 시 나타나는 설명글을 설정합니다. | Hello, there               |
+| url                  | `Repository` 의 이름과 똑같이 설정해주세요.       | https://username.github.io |
+| theme_mode           | 블로그의 테마를 설정합니다.                       | light, dark                |
+| avatar               | 사이드바의 프로필을 설정합니다.                   | /assets/img/avatar.jpg     |
+| social_preview_image | 링크 공유 시 나타나는 사진을 설정합니다.          | /asssets/img/seo.jpg       |
+| paginate             | 한 페이지에 나타낼 최대 게시물 수를 설정합니다.   | 5                          |
 
 <br>
 
