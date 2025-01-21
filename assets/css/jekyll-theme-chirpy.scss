@@ -8,3 +8,13 @@
 ';
 
 /* append your custom style below */
+
+.btn:hover {
+  background-color: var(--trending-tags-newer-older) !important;  // Red color
+}
+
+.btn.btn-outline-primary {
+  &:not(.disabled):hover {
+    border-color: var(--trending-tags-newer-older) !important;  // Red color
+  }
+}

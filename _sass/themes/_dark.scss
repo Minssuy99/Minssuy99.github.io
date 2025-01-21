@@ -4,7 +4,7 @@
   /* Framework color */
   --main-bg: rgb(27, 27, 30);
   --mask-bg: rgb(68, 69, 70);
-  --main-border-color: rgb(44, 45, 45); // 구분선 색
+  --main-border-color: rgb(139,0,0);// rgb(44, 45, 45); // 구분선 색
 
   /* Common color */
   --text-color: rgb(175, 176, 177);
@@ -12,10 +12,12 @@
   --text-muted-highlight-color: #aeaeae;
   --heading-color: #cccccc;
   --label-color: #a7a7a7;
+  --placeholders-link-color: rgb(160, 70, 70); // 페이지 오른쪽 위 Recently Updated 링크 호버 색상
+  --trending-tags-newer-older: rgb(139,0,0); // 트렌딩 태그 + older newr 색상
   --blockquote-border-color: rgb(66, 66, 66);
   --blockquote-text-color: #868686;
-  --link-color: rgb(138, 180, 248);
-  --link-underline-color: rgb(82, 108, 150);
+  --link-color: rgb(205, 92, 92); // rgb(138, 180, 248); 하이퍼링크 색상
+  --link-underline-color: rgb(0, 0, 0, 0); // rgb(82, 108, 150); 하이퍼링크 언더바색상
   --button-bg: #1e1e1e;
   --btn-border-color: #2e2f31;
   --btn-backtotop-color: var(--text-color);
@@ -56,7 +58,7 @@
   --btn-paginator-hover-color: #2e2e2e;
 
   /* Posts */
-  --toc-highlight: rgb(116, 178, 243);
+  --toc-highlight: rgb(205, 92, 92); // rgb(116, 178, 243);
   --toc-popup-border-color: #373737;
   --tag-hover: rgb(43, 56, 62);
   --tb-odd-bg: #252526; /* odd rows of the posts' table */
@@ -101,7 +103,7 @@
   /* Code highlight colors */
   --language-border-color: #2d2d2d;
   --highlight-bg-color: rgb(130, 130, 136);// #151515; // 코드블럭 상단색
-  --highlighter-rouge-color: #c9def1; // 인라인 글씨색
+  --highlighter-rouge-color: rgb(205, 92, 92); // #c9def1; // 인라인 글씨색
   --inline-code-bg: rgba(255, 255, 255, 0.05); // 인라인 배경색
   --highlight-lineno-color: #808080; // 코드블럭 라인넘버 색
   --code-color: #b0b0b0;
