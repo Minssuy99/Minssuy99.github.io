@@ -3,8 +3,8 @@ title: Rigidbody
 description: Rigidbody is a Unity component that enables physics-based movement for objects
 author: Minssuy99
 date: 2025-01-20 14:40:00 +0900
-categories: [Unity, Wiki]
-tags: [Unity, Input System]
+categories: [Wiki, UnityDocs]
+tags: [Unity, Rigidbody]
 pin: false
 # math: false
 # mermaid: false

@@ -3,7 +3,7 @@ title: Input System
 description: A New Input System to Replace the Classical Input System
 author: Minssuy99
 date: 2025-01-17 11:00:00 +0900
-categories: [Unity, Wiki]
+categories: [Wiki, UnityDocs]
 tags: [Unity, Input System]
 pin: false
 # math: false
