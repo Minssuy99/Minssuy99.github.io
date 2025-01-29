@@ -219,10 +219,10 @@ public void Translate(Vector3 translation, Transform relativeTo)
 
 좌표계에 넣을 수 있는 인자는 두개가 있다.
 
-* Space.Self (기본값)
+* _`Space.Self (Default)`_
     * 오브젝트의 로컬 좌표계를 기준으로 적용한다.
     * 쉽게 말해서, 오브젝트가 바라보고 있는 방향으로 이동한다.
-* Space.World
+* _`Space.World`_
     * 월드좌표 축 방향으로 이동하게 된다.
     * 쉽게 말해서, 위에 첨부한 gif 사진과 똑같이 비정상적으로 움직이게 된다.
 
@@ -235,10 +235,10 @@ void Update()
 {
     if (Input.GetKey(KeyCode.W))
     {
-        transform.Tey(KeyCode.S))
-    {ranslate(Vector3.forward * (Time.deltaTime * _speed));
+        transform.Translate(Vector3.forward * (Time.deltaTime * _speed));
     }
-    if (Input.GetK
+    if (Input.GetKTey(KeyCode.S))
+    {
         transform.Translate(Vector3.back * (Time.deltaTime * _speed));
     }
     if (Input.GetKey(KeyCode.A))
@@ -612,7 +612,10 @@ struct MyVector
 }
 ```
 
+<br>
+
 <!--------------------------------------Reference-------------------------------------->
+
 
 ## _**Reference**_
 ---
