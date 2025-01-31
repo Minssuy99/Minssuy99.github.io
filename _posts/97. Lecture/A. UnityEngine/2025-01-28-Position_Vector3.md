@@ -12,7 +12,7 @@ image:
   path: 'thumbnail.jpg'
   lqip: data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAaCAAAAADQq1A2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAADFSURBVDjLY2AYBUMB8JKqweq/0X99UjTwnf3/lOH9/0McxGtZ/f89kPz5fwaD+xmGQ/5AdmvITjm8Wub9//9/LhD3MAS+ZbiXcen/9OSK/0cOC+7WKLXAoWXRd4a1/xcy/O9nCH7CcDnrP8P/lqxrkjXd/xk6bHBo2bGSQeo/B8O+JQxq/wP+2wO1dBXcL2b4vxi3wzgazpr+17pWzM7A4LLMi6GSodrCUK+S878pHs+k/QeBGFTB+Er8gTbzf99och6iAADgXk8NioFvJgAAAABJRU5ErkJggg==
   # alt:
-media_subpath: '/assets/img/Lecture/UnityEngine'
+media_subpath: '/assets/img/posts/Lecture/UnityEngine'
 ---
 <!---------------------------------------Header-------------------------------------->
 ## _**Position**_
@@ -421,7 +421,7 @@ $$
 
 <br>
 
-이렇게 하여 `(0.6, 0.8, 0.0)` 방향을 가진 크기가 `1` 인 벡터를 만들 수 있다.
+이렇게 하여 `(0.6, 0.8, 0.0)` 방향을 가진 벡터의 크기가 `1` 인 벡터를 만들 수 있다.
 
 <br>
 
