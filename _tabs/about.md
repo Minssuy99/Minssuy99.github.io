@@ -23,6 +23,6 @@ order: 4
 
 <h4>Please feel free to look around and have a good time.</h4>
 
-<h4>공유 목적으로 작성된 글이 아닌, 공부한 내용을 바탕으로 작성하는 기록용 블로그입니다.</h4>
+공유 목적으로 작성된 글이 아닌, 공부한 내용을 바탕으로 작성하는 기록용 블로그입니다.
 
 </div>
