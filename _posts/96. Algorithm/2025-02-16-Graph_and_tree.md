@@ -3,7 +3,7 @@ title: "Graph and Tree"
 description: Algorithm Theory
 author: Minssuy99
 date: 2025-02-16 01:30:00 +0900
-categories: [Algorithm, Theory]
+categories: [Algorithm]
 tags: [Cpp, Algorithm, Coding Test]
 pin: false
 math: true
