@@ -92,7 +92,7 @@ float v = Input.GetAxis("Vertical");
 ```csharp
 float moveAmount = Mathf.Abs(h) + Mathf.Abs(v);
 ```
-* 얼마나 움직였는지 계산한다.
+* 입력이 있는지 없는지, 얼마나 움직이려고 하는지 체크하기 위해 절댓값으로 사용한다.
 
 <br>
 
