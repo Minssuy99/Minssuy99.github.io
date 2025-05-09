@@ -61,7 +61,7 @@ Cursor.visible = false; // 커서 숨김
     * `None` : 커서가 잠기지 않으며 화면 밖으로 나갈 수 있음. (기본값)
     * `Locked` : 커서가 화면 중앙에 고정되며, 화면 밖으로 나가지 못함.<br>
                  이 상태에서는 `visible` 속성과 관계 없이 커서가 표시되지 않음.
-    * `Confined` : 커서가 화면에 보이지 않음.
+    * `Confined` : 커서가 화면 밖으로 나갈 수 없음.
 
 ```csharp
 Cursor.lockState = CursorLockMode.Locked; // 커서 숨김
