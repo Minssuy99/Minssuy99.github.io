@@ -115,7 +115,7 @@ description="Rigidbody is a Unity component that enables physics-based movement 
 * **Continuous Dynamic** : 움직이는 오브젝트에 대해 더욱 정밀한 충돌 감지를 수행한다.
 * **Continuous Speculative** : 충돌을 예측하여 감지하며, 가장 무거운 연산을 사용한다.
 
-![image](241230-test.gif)
+![image](2024-12-30-test.gif)
 
 위의 빨간색 큐브는 `Discrete` 로 설정되어 있고, 아래의 빨간색 큐브는 `Continuous` 로 설정되어 있다.
 
