@@ -1,5 +1,5 @@
 ---
-title: Character Controller
+title: 2. Character Controller
 description: Game Development
 author: Minssuy99
 date: 2025-05-10 02:00:00 +0900

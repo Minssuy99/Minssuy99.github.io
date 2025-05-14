@@ -1,5 +1,5 @@
 ---
-title: Animation Setup
+title: 3. Animation Setup
 description: Game Development
 author: Minssuy99
 date: 2025-05-11 22:30:00 +0900

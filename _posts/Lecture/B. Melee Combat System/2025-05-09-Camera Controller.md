@@ -1,5 +1,5 @@
 ---
-title: Camera Controller
+title: 1. Camera Controller
 description: Game Development
 author: Minssuy99
 date: 2025-05-09 09:00:00 +0900

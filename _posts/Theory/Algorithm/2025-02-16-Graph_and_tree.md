@@ -3,7 +3,7 @@ title: "Graph and Tree"
 description: Algorithm Theory
 author: Minssuy99
 date: 2025-02-16 01:30:00 +0900
-categories: [Algorithm]
+categories: [Theory, Algorithm]
 tags: [Cpp, Algorithm, Coding Test]
 pin: false
 math: true
@@ -12,7 +12,7 @@ image:
   path: 'thumbnail.jpg'
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAEABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAn/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAUH/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AsAAqMvAAf//Z
   # alt:
-media_subpath: '/assets/img/posts/Algorithm'
+media_subpath: '/assets/img/posts/Theory/Algorithm'
 ---
 
 <!----------------------북마크---------------------------->
