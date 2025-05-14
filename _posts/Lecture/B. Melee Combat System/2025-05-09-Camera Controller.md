@@ -133,7 +133,7 @@ public class CameraController : MonoBehaviour
 ## _**Result**_
 ---
 
-![img](2025-05-09-Camera move.gif)
+![img](2025-05-09-Camera move.gif){: width="1200" height="630"}
 
 <br>
 

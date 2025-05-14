@@ -184,7 +184,7 @@ public class PlayerController : MonoBehaviour
 ## _**Result**_
 ---
 
-![img](2025-05-10-Character move.gif)
+![img](2025-05-10-Character move.gif){: width="1200" height="630"}
 
 <br>
 

@@ -146,7 +146,7 @@ public class CombatController : MonoBehaviour
 
 이 상태에서 게임을 실행하면 아래와 같이, 움직이면서 공격모션이 나가는 모습이 보여진다.
 
-![img](2025-05-14-Attack1.gif)
+![img](2025-05-14-Attack1.gif){: width="1200" height="630"}
 
 이를 위해서, 공격 애니메이션이 실행되는 동안엔 움직여지지 않도록 `PlayerController.cs` 를 수정한다.
 
@@ -168,7 +168,7 @@ void Update()
 
 <br>
 
-![img](2025-05-14-Attack2.gif)
+![img](2025-05-14-Attack2.gif){: width="1200" height="630"}
 
 이젠 공격 애니메이션이 실행되는 동안에는 움직여지지 않지만 사소한 문제가 있다.
 
@@ -299,4 +299,4 @@ public class PlayerController : MonoBehaviour
 ## _**Result**_
 ---
 
-![img](2025-05-14-Result.gif)
+![img](2025-05-14-Result.gif){: width="1200" height="630"}

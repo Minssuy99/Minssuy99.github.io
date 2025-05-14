@@ -27,7 +27,7 @@ media_subpath: '/assets/img/posts/Lecture/B. Melee Combat System'
 
 이유는 스켈레톤 `Skeleton` 구조는 같더라도, 본 `Bone`의 이름이나 계층 구조가 다르기 때문이다.
 
-![img](2025-05-11-model.jpg)
+![img](2025-05-11-model.jpg){: width="1200" height="630"}
 
 <br>
 
@@ -35,7 +35,7 @@ media_subpath: '/assets/img/posts/Lecture/B. Melee Combat System'
 
 이를 재생하는 방식이기 때문에 이름이 다르면 해당 본을 찾을 수 없어 애니메이션이 작동하지 않게 된다.
 
-![img](2025-05-11-animation prev.jpg)
+![img](2025-05-11-animation prev.jpg){: width="1200" height="630"}
 _Y Bot 모델과 본의 이름이 다르다_
 
 <br>
@@ -95,10 +95,10 @@ _Animation Type : Generic → Humanoid_
 
 이렇게 하면 루트 모션이 제거되어, 애니메이션은 재생되지만 실제 위치 이동은 발생하지 않는다.
 
-![img](2025-05-11-before.gif){: .w-50}
+![img](2025-05-11-before.gif){: width="630" height="1200"}
 _Before_
 
-![img](2025-05-11-after.gif){: .w-50}
+![img](2025-05-11-after.gif){: width="630" height="1200"}
 _After_
 
 <br>
@@ -109,7 +109,7 @@ _After_
 
 자연스럽게 전환 `Blend` 시켜주는 `Unity` 의 애니메이션 시스템 기능이다.
 
-![img](2025-05-11-blend animation.gif)
+![img](2025-05-11-blend animation.gif){: width="1200" height="630"}
 _Example_
 
 <br>
@@ -118,7 +118,7 @@ _Example_
 
 우측의 인스펙터 창에서 `Automate Thresholds` 체크박스를 `false` 로 바꿔주면 사용자임의로 설정이 가능하다.
 
-![img](2025-05-11-Blend Tree.jpg)
+![img](2025-05-11-Blend Tree.jpg){: width="1200" height="630"}
 _Inspector_
 
 
@@ -218,5 +218,5 @@ public class PlayerController : MonoBehaviour
 ## _**Result**_
 ---
 
-![img](2025-05-11-Result.gif)
+![img](2025-05-11-Result.gif){: width="1200" height="630"}
 

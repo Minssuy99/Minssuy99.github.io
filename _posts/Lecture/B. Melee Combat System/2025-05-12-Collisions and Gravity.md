@@ -185,7 +185,7 @@ public class PlayerController : MonoBehaviour
 ## _**Result**_
 ---
 
-![img](2025-05-12-Result.gif)
+![img](2025-05-12-Result.gif){: width="1200" height="630"}
 _충돌할 오브젝트의 Layer 을 Obstacle 로 지정한다_ 
 
 <br>
