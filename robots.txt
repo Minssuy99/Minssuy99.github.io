@@ -1,4 +1,5 @@
 ---
+layout: null
 permalink: /robots.txt
 # The robots rules
 ---
