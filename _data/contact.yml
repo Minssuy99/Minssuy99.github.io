@@ -1,7 +1,15 @@
 #  The contact options.
 
+- type: email
+  icon: "fas fa-envelope"
+  noblank: true # open link in current tab
+
 - type: github
   icon: "fab fa-github"
+
+- type: custom
+  icon: "fas fa-book"  # 원하는 Font Awesome 아이콘으로 변경 가능
+  url: "https://minssuy99.tistory.com/"
 
 - type: instagram
   icon: "fab fa-instagram"
@@ -9,14 +17,9 @@
 #- type: twitter
 #  icon: "fa-brands fa-x-twitter"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
-
-- type: rss
-  icon: "fas fa-rss"
-  noblank: true
-
+#- type: rss
+#  icon: "fas fa-rss"
+#  noblank: true
 
 # Uncomment and complete the url below to enable more contact options
 #
