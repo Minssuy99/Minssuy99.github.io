@@ -3,6 +3,9 @@
 # pulgins
 plugins:
    - jekyll-target-blank
+   - jekyll-seo-tag
+   - jekyll-sitemap
+
 
 # Import the theme
 theme: jekyll-theme-chirpy
