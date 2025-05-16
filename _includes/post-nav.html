@@ -1,34 +1,51 @@
-<!-- Navigation buttons at the bottom of the post. -->
+{% assign cat = page.categories[1] %}
+{% assign cat_list = site.categories[cat] %}
+{% for post in cat_list %}
+  {% if post.url == page.url %}
+    {% assign prevIndex = forloop.index0 | minus: 1 %}
+    {% assign nextIndex = forloop.index0 | plus: 1 %}
+    {% if forloop.first == false %}
+      {% assign next_post = cat_list[prevIndex] %}
+    {% endif %}
+    {% if forloop.last == false %}
+      {% assign prev_post = cat_list[nextIndex] %}
+    {% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
-<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
-  {% assign previous = site.data.locales[include.lang].post.button.previous %}
-  {% assign next = site.data.locales[include.lang].post.button.next %}
-
-  {% if page.previous.url %}
+<div class="post-navigation d-flex justify-content-between">
+  {% if prev_post %}
     <a
-      href="{{ site.baseurl }}{{ page.previous.url }}"
+      href="{{ site.baseurl }}{{ prev_post.url }}"
       class="btn btn-outline-primary"
-      aria-label="{{ previous }}"
+      aria-label="{{ site.data.locales[include.lang].post.button.previous }}"
     >
-      <p>{{ page.previous.title }}</p>
+      <p>{{ prev_post.title }}</p>
     </a>
   {% else %}
-    <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
+    <div
+      class="btn btn-outline-primary disabled"
+      aria-label="{{ site.data.locales[include.lang].post.button.previous }}"
+    >
       <p>-</p>
     </div>
   {% endif %}
 
-  {% if page.next.url %}
+  {% if next_post %}
     <a
-      href="{{ site.baseurl }}{{page.next.url}}"
+      href="{{ site.baseurl }}{{ next_post.url }}"
       class="btn btn-outline-primary"
-      aria-label="{{ next }}"
+      aria-label="{{ site.data.locales[include.lang].post.button.next }}"
     >
-      <p>{{ page.next.title }}</p>
+      <p>{{ next_post.title }}</p>
     </a>
   {% else %}
-    <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">
+    <div
+      class="btn btn-outline-primary disabled"
+      aria-label="{{ site.data.locales[include.lang].post.button.next }}"
+    >
       <p>-</p>
     </div>
   {% endif %}
-</nav>
+</div>
