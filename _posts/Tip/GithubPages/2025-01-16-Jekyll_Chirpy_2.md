@@ -98,7 +98,7 @@ $ jekyll new ./
 
 명령어를 실행한 후, 프로젝트 폴더에 아래와 같이 파일들이 생성되었다면 성공입니다.
 
-![jekyll](jekyll_new.jpg)
+![jekyll](Setup/jekyll_new.jpg)
 
 <br>
 
@@ -118,7 +118,7 @@ $ bundle install
 $ bundle exec jekyll server
 ```
 
-![jekyll](bundle_exec_jekyll_server.jpg)
+![jekyll](Setup/bundle_exec_jekyll_server.jpg)
 
 실행을 한 뒤 사진의 빨간색 박스를 보시면, `http://127.0.0.1:4000/` 이 적혀있습니다.
 
@@ -128,7 +128,7 @@ $ bundle exec jekyll server
 
 사진과 같이 `Welcome to Jekyll!` 문구가 있는 사이트가 열린다면 성공입니다.
 
-![jekyll](./welcome_to_jekyll.jpg)
+![jekyll](Setup/welcome_to_jekyll.jpg)
 
 <br>
 
@@ -162,13 +162,13 @@ description="Chirpy 테마를 다운로드 하기 위해 여기를 클릭하세�
 
 위 링크를 클릭하여 사이트에 접속한 뒤, <kbd>Releases v7.2.4</kbd> 를 클릭합니다.
 
-![jekyll](chirpy_github.jpg)
+![jekyll](Setup/chirpy_github.jpg)
 
 <br>
 
 <kbd>Source code (zip)</kbd> 를 클릭하여 `jekyll-theme-chirpy-7.2.4.zip` 을 다운로드 합니다.
 
-![jekyll](source_code.jpg)
+![jekyll](Setup/source_code.jpg)
 
 <br>
 
@@ -176,9 +176,9 @@ description="Chirpy 테마를 다운로드 하기 위해 여기를 클릭하세�
 
 파일들을 넣으실 때, 중복 경고가 나타나게 되는데 덮어쓰기 해주시면 됩니다.
 
-![jekyll](move_files.jpg)
+![jekyll](Setup/move_files.jpg)
 
-![jekyll](overwrite.jpg)
+![jekyll](Setup/overwrite.jpg)
 
 <br>
 
@@ -207,7 +207,7 @@ _`username.github.io/.husky`_ 경로에 들어가시면 `commit-msg` 라는 파�
 
 이 파일을 더블클릭 후, `VS Code` 로 실행해주세요.
 
-![jekyll](commit-msg.jpg)
+![jekyll](Setup/commit-msg.jpg)
 
 `commit-msg` 파일 내부엔 아래와 같은 코드가 작성되어 있는데, **내용을 전부 지워주시면 됩니다.**
 
@@ -299,7 +299,7 @@ jekyll-theme-chirpy@7.2.4 C:\Users\MinSeong\Desktop\Minssuy99.github.io
 
 아래 사진과 같이 `dist` 폴더 및 파일들이 생성되었다면 성공입니다.
 
-![jekyll](dist.jpg)
+![jekyll](Setup/dist.jpg)
 
 <br>
 
@@ -323,7 +323,7 @@ $ bundle exec jekyll server
 
 아래와 같은 화면이 출력된다면 성공입니다.
 
-![jekyll](local_server.jpg)
+![jekyll](Setup/local_server.jpg)
 
 <br>
 <br>

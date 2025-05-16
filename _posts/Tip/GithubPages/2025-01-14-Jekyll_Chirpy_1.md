@@ -12,7 +12,7 @@ image:
   path: 'thumbnail.jpg'
   lqip: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQIBAQICAgICAgICAwUDAwMDAwYEBAMFBwYHBwcGBwcICQsJCAgKCAcHCg0KCgsMDAwMBwkODw0MDgsMDAz/2wBDAQICAgMDAwYDAwYMCAcIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAZADIDASIAAhEBAxEB/8QAGgABAAIDAQAAAAAAAAAAAAAAAAEHAgMICf/EACUQAAICAgEFAAEFAAAAAAAAAAECAAMEBREGBxITIVEIFCIxYf/EABcBAQEBAQAAAAAAAAAAAAAAAAACAQP/xAAeEQEAAgICAwEAAAAAAAAAAAABAAIDIRExQWFxgf/aAAwDAQACEQMRAD8A8y4iSiNY6qqszMeAAOSTESIlhdC9m9RstNq87qjqjF6bXY51XjgsrHPt15DM2Ui+JVVf12JWXP1/WWT1We5bETtD2yyO4zfu7qbMHdY2NnYfT+qyMvGydZiBaLnDNkGyxsqypbAykugSzIuqDFcSq+bWKja3ROuHDkzZK4cQ2tZADtXQHtZzyG8h8iWJ+q3uXqu7Pf3f7jQ9OaXpPRq1OBg6vVhGx6K8elKPP2Kqm5rGra1rWAZzZzwo4Va7mjycyMlGlmj41pE/E0/TTERE2TEEciIiJJdmtZyzF2byZif5E/kn8/7M8fKtxMkXU2203KxcWI5Vwx/s8j7z9P2a4iIA8RwIiIiIiIif/9k=
   # alt:
-media_subpath: '/assets/img/posts/Tip/Github Pages'
+media_subpath: '/assets/img/posts/Tip/Github Pages/'
 ---
 <!--------------------------------------yaml-------------------------------------->
 
@@ -55,11 +55,11 @@ media_subpath: '/assets/img/posts/Tip/Github Pages'
 
 `Github` 의 우측 위에 보이는 <kbd>+</kbd> 를 클릭 후, <kbd>New repository</kbd> 를 선택합니다.
 
-![Github](./new_repository_button.jpg)
+![Github](Setup/new_repository_button.jpg)
 
 클릭 시 아래와 같은 화면이 나타나게 됩니다.
 
-![Github](./Creat_a_new_repository.jpg)
+![Github](Setup/Creat_a_new_repository.jpg)
 
 `Repository name *` 에 `{username}.github.io` 를 입력합니다.
 
@@ -81,13 +81,13 @@ media_subpath: '/assets/img/posts/Tip/Github Pages'
 
 <kbd>Clone Git Repository...</kbd> 를 누르신 뒤, `VS Code` 의 상단의 <kbd>Clone from GitHub</kbd> 를 눌러주세요.
 
-![Github](./clone_git_repository.jpg)
+![Github](Setup./clone_git_repository.jpg)
 
 <br>
 
 그럼 아까 전 저희가 생성해두었던 `{username}.github.io` 가 선택창에 나타나게 됩니다.
 
-![Github](./click_my_repository.jpg)
+![Github](Setup/click_my_repository.jpg)
 
 해당 `Repository` 를 클릭 시, 저장위치를 설정 할 수 있습니다.
 

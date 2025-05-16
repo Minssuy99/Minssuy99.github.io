@@ -47,11 +47,11 @@ description="로컬 서버 생성 및 테마 설치" %}
 
 `VS Code` 를 실행 후, <kbd>Open Folder...</kbd> 를 클릭 후, 프로젝트 폴더를 열어주세요.
 
-![VS Code](open_folder.jpg)
+![VS Code](Setup/open_folder.jpg)
 
 사이드바에서 _`_config.yml`_ 을 클릭합니다.
 
-![VS Code](select_config.jpg)
+![VS Code](Setup/select_config.jpg)
 
 _`_config.yml`_ 파일을 수정하여 블로그 설정을 할 수 있습니다.
 
@@ -168,7 +168,7 @@ box-shadow: (v.$code-dot-size + v.$code-dot-gap) 0 0#F3B63B,
 
 우측의 <KBD>+</KBD> 기호 오른쪽에 아래 화살표를 클릭 후 `bash` 를 선택해주시면 됩니다.
 
-![VS Code](bash.jpg)
+![VS Code](Setup/bash.jpg)
 
 이후 아래와 같이 명령어를 실행해주시면 배포는 끝납니다.
 
@@ -186,31 +186,31 @@ $ git push origin main
 
 이후 우측 위의 메뉴 중 `Repository` 의 `Settings` 로 들어가주세요.
 
-![GitHub](github_settings.jpg)
+![GitHub](Setup/github_settings.jpg)
 
 <br>
 
 좌측의 `Pages` 로 들어가서 `Source` 를 `GitHub Actions` 로 변경해줍니다.
 
-![GitHub](github_pages.jpg)
+![GitHub](Setup/github_pages.jpg)
 
 <br>
 
 그럼 아래와 같이 `Jekyll` 이라는 박스가 나타나는데, <KBD>Configure</KBD> 을 클릭해줍니다.
 
-![GitHub](configure.jpg)
+![GitHub](Setup/configure.jpg)
 
 <br>
 
 이후 우측 위의 <KBD>Commit changes...</KBD> 를 클릭해주시면 됩니다.
 
-![GitHub](commit_changes_1.jpg)
+![GitHub](Setup/commit_changes_1.jpg)
 
 <br>
 
 한번 더 <KBD>Commit changes...</KBD> 를 클릭해주시면 끝이 납니다.
 
-![GitHub](commit_changes_2.jpg)
+![GitHub](Setup/commit_changes_2.jpg)
 
 <br>
 
@@ -222,7 +222,7 @@ git pull
 
 _`username.github.io/.github/workflows`_ 에 _`jekyll.yml`_ 이 추가되었다면 성공입니다.
 
-![GitHub](jekyll_yml.jpg)
+![GitHub](Setup/jekyll_yml.jpg)
 
 <br>
 
