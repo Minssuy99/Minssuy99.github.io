@@ -474,3 +474,9 @@ mjx-container {
     margin-top: 3rem;
   }
 }
+
+/* --- 그림자 설정 --- */
+img.shadow {
+  @extend %rounded;
+  box-shadow: 0 0.4rem 0.8rem var(--img-shadow-color) !important;
+}
