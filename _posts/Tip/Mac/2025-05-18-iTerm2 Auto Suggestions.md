@@ -1,11 +1,12 @@
 ---
 title: "[Mac] iTerm2 Auto Suggestions 자동완성 플러그인 설치 및 적용"
-description: GitHub Pages
+description: Installing and Applying the Auto Suggestions Plugin for iTerm2
 author: Minssuy99
 date: 2025-05-17 20:30:00 +0900
 categories: [Tip, Mac]
 tags: [Mac, iTerm2, Zsh]
 pin: false
+permalink: /posts/Mac-iTerm2-Auto-Suggestions/
 # math: false
 # mermaid: false
 image:

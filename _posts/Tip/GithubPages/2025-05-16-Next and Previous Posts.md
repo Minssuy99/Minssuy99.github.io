@@ -1,6 +1,6 @@
 ---
 title: "[Chirpy] 같은 카테고리 내에서 이전 글, 다음 글 이동"
-description: GitHub Pages
+description: Move Previous Text, Next Text Within the Same Category in Chirpy
 author: Minssuy99
 date: 2025-05-16 16:00:00 +0900
 categories: [Tip, Github Pages]
