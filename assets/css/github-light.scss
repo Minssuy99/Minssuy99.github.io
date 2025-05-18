@@ -1,0 +1,31 @@
+@mixin theme {
+  /* GitHub Light 테마의 코드 하이라이팅 스타일 */
+  .highlight {
+    background-color: #f8f8f8;
+    color: #24292e;
+
+    .c,
+    .cm,
+    .cp,
+    .c1,
+    .cs {
+      color: #617a97;
+    } /* 주석 */
+
+    .k { color: #d73a49; font-weight: bold;} /* 키워드 */
+    .kc { color: #005cc5; } /* 키워드: 상수 */
+    .kd { color: #d73a49; } /* 키워드: 선언 */
+    .kn { color: #d73a49; } /* 키워드: 네임스페이스 */
+    .kp { color: #d73a49; } /* 키워드: 의사 */
+    .kr { color: #d73a49; } /* 키워드: 예약어 */
+    .kt { color: #d73a49; } /* 키워드: 타입 */
+
+
+    .n { color: #000000; } /* 이름 */
+    .nf { color: #8250df; font-weight: bold;} /* 함수 */
+    .o { color: #d73a49; } /* 연산자 */
+    .p { color: #0A69DA; } /* 구두점 */
+    .m { color: #0350AE; } /* 리터럴: 숫자 */
+    .s { color: #0350AE; } /* 리터럴: 문자열 */
+  }
+}

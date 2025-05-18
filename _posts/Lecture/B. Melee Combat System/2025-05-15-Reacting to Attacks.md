@@ -114,7 +114,7 @@ _Equip Sword_
 
 <br>
 
-타격 애니메이션을 `Slash` 와 마찬가지로 트랜지션을 만들어 `Empty` 에 연결한다.
+피격 애니메이션을 `Slash` 와 마찬가지로 트랜지션을 만들어 `Empty` 에 연결한다.
 
 ![img](2025-05-15-animator.jpg){: width="650"}
 
@@ -130,7 +130,7 @@ _Equip Sword_
 
 ### _**Code**_
 
-지난 글에 작성한 `IEnumerator Attack()` 코루틴과 마찬가지로, 타격 애니메이션도 아래와 같이 작성한다.
+지난 글에 작성한 `IEnumerator Attack()` 코루틴과 마찬가지로, 피격 애니메이션도 아래와 같이 작성한다.
 
 `OnTrigger` 을 호출시키기 위해, 검의 콜라이더에 `isTrigger` 을 활성화시켜줘야 하고
 
@@ -142,7 +142,7 @@ private void OnTriggerEnter(Collider other)
     // 공격모션이 실행 중이 아니며, 히트박스 태그(검) 과 충돌했다면
     if (other.tag == "Hitbox" && !InAction)
     {
-        StartCoroutine(PlayerHitReaction()); // 타격 애니메이션 코루틴 실행
+        StartCoroutine(PlayerHitReaction()); // 피격 애니메이션 코루틴 실행
     }
 }
 

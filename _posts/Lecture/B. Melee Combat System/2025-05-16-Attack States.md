@@ -22,7 +22,7 @@ media_subpath: '/assets/img/posts/Lecture/B. Melee Combat System'
 
 현재 문제는 플레이어가 장비하고 있는 검이 적 오브젝트에 닿이기만 해도
 
-적 오브젝트는 콜라이더가 호출되며 타격 애니메이션이 나타나게 된다.
+적 오브젝트는 콜라이더가 호출되며 피격 애니메이션이 나타나게 된다.
 
 ![img](2025-05-16-Trouble.gif){: width="1200" height="630"}
 
