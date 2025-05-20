@@ -37,7 +37,7 @@ _No Collision_
 
 아래와 같이 손과 발에 콜라이더를 추가한 뒤, 태그와 레이어를 검과 똑같이 설정한다.
 
-![img](2025-05-20-addcollider.jpg){: .shadow .rounded-10 .w-75 w="1200"}
+![img](2025-05-19-addcollider.jpg){: .shadow .rounded-10 .w-75 w="1200"}
 
 <br>
 
@@ -68,7 +68,7 @@ public enum AttackHitbox // Add
 
 추가한 `enum` 타입을 각 인스턴스의 인스펙터에서 지정한다.
 
-![img](2025-05-20-Inspector.jpg){: .shadow .rounded-10 .w-75 w="1200"}
+![img](2025-05-19-Inspector.jpg){: .shadow .rounded-10 .w-75 w="1200"}
 _Hitbox To Use_
 
 <br>
@@ -372,7 +372,7 @@ public class MeleeFighter : MonoBehaviour
 
 `CharacterController` 는 리지드바디가 없더라도 콜라이더와 부딪혔을 때 충돌검사가 가능하다.
 
-![img](2025-05-20-CharacterController.jpg){: .shadow .rounded-10 .w-75 w="1200"}
+![img](2025-05-19-CharacterController.jpg){: .shadow .rounded-10 .w-75 w="1200"}
 _CharacterController_
 
 
@@ -383,5 +383,5 @@ _CharacterController_
 
 발차기 공격을 했을 때, 우측의 인스펙터 창에서 `Sphere Collider` 가 `On/Off` 되는 모습을 확인할 수 있다.
 
-![img](2025-05-20-HitboxResult.gif){: .shadow .rounded-10 .w-75 w="1200"}
+![img](2025-05-19-HitboxResult.gif){: .shadow .rounded-10 .w-75 w="1200"}
 _Result_
