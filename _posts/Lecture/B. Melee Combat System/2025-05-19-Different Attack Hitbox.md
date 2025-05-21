@@ -7,7 +7,7 @@ categories: [Lecture, Melee Combat System]
 tags: [C#, Unity]
 pin: false
 math: true
-permalink : /posts/Different Attack Hitbox
+permalink : /posts/Different-Attack-Hitbox
 # mermaid: false
 image:
   path: 'thumbnail.jpg'
