@@ -212,5 +212,5 @@ _Result_
 
 적 오브젝트 간 충돌이 발생했을 땐 원활한 처리가 이루어지지 않는다.
 
-![img](2025-05-31-Error.gif){: .shadow .rounded-10 .w-75 w="1200"}
+![img](2025-05-31-error.gif){: .shadow .rounded-10 .w-75 w="1200"}
 _Error_
