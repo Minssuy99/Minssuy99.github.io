@@ -20,7 +20,7 @@ Minssuy99と申します。
 私のブログをご覧いただき、ありがとうございます。
 
 <h4>I'm studying to become a game developer.</h4>
-現在、ゲーム開発者を目指して勉強に励んでいます。
+現在、ゲームクリエイターを目指して勉強に励んでいます。
 
 <h4>This is a blog that I organized based on what I learned, not for sharing purposes.</h4>
 当ブログは、学んだ内容を自分なりに整理することを目的として作成したもので、<br>情報の共有が主な目的ではありません。
