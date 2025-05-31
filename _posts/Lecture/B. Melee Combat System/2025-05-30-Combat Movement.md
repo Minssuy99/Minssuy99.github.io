@@ -2,7 +2,7 @@
 title: 12. Combat Movement
 description: Game Development
 author: Minssuy99
-date: 2025-05-31 21:00:00 +0900
+date: 2025-05-31 16:00:00 +0900
 categories: [Lecture, Melee Combat System]
 tags: [C#, Unity]
 pin: false
