@@ -441,7 +441,7 @@ _2D Blend Tree_
 
 오브젝트의 진행방향에 따라서 회전 애니메이션이 실행되는 모습을 볼 수 있다.
 
-![img](2025-06-01-shooting.gif){: .shadow .rounded-10 .w-75 w="1200"}
+![img](2025-06-01-Shooting.gif){: .shadow .rounded-10 .w-75 w="1200"}
 _2D Blend Tree_
 
 <br>
