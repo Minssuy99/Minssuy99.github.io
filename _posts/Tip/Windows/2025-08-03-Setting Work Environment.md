@@ -1,6 +1,6 @@
 ---
 title: "[Windows] Logi Options+ 와 PowerToys를 이용한 작업환경 빠르게 세팅하기"
-description: Setting Work Environment Using Logi+ and PowerToys
+description: Setting Work Environment
 author: Minssuy99
 date: 2025-08-03 21:00:00 +0900
 categories: [Tip, Windows]
