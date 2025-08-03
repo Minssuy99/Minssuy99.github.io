@@ -1,5 +1,5 @@
 ---
-title: "[Windows] Logi+ 와 PowerToys를 이용한 작업환경 빠르게 세팅하기"
+title: "[Windows] Logi Options+ 와 PowerToys를 이용한 작업환경 빠르게 세팅하기"
 description: Setting Work Environment Using Logi+ and PowerToys
 author: Minssuy99
 date: 2025-08-03 21:00:00 +0900
@@ -198,6 +198,8 @@ _If and Then_
 
 <kbd>동작 추가</kbd> 버튼을 눌러보면 다양한 동작이 나타나게 된다.
 
+<br>
+
 여기서 사용할 것은 `키 입력`, `텍스트`, `지연` 뿐이다.
 
 * `키 입력` : 녹화 시작을 누른 뒤, 마우스 또는 키보드를 입력하여 동작 매크로 추가
@@ -215,14 +217,14 @@ _If and Then_
 ![img](2025-08-03-then1.jpg){: .shadow .rounded-10 .w-75 w="1200"}
 _Then_
 
-* 키 입력 : Ctrl + Windows + \`(백틱) `// 키 입력 시 동시에 입력해야함`
+* _**키 입력 : Ctrl + Windows + \`(백틱) `// 키 입력 시 동시에 입력해야함`**_
   * `작업 영역` 의 리스트 목록을 띄우는 단축키
-* 2초 지연
+* _**2초 지연**_
   * `작업 영역` 프로그램이 켜질 때 까지 여유시간 확보
-* 키 입력 : Tab 키 8회, 이후 Enter, 이후 `Alt + F4`
+* _**키 입력 : Tab 키 8회, 이후 Enter, 이후 `Alt + F4`**_
   * 설정한 `작업 영역` 의 `실행` 버튼을 누르기 위한 동작
   * Enter 로 실행 한 뒤, 띄워놓았던 `작업 영역` 창을 `Alt + F4` 로 즉시 닫음.
-* 4초 지연
+* _**4초 지연**_
   * `작업 영역` 에서 설정했던 프로그램들이 전부 켜질 때 까지 대기
 
 ![img](2025-08-03-then1.jpg){: .shadow .rounded-10 .w-75 w="1200"}
@@ -236,6 +238,8 @@ _Tab x 8, Enter, Alt + F4 Setting_
 
 ![img](2025-08-03-then2.jpg){: .shadow .rounded-10 .w-75 w="1200"}
 _My Setting..._
+
+<br>
 
 ## _**Result**_
 ___
