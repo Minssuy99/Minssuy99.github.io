@@ -1,12 +1,12 @@
 ---
 title: "[Windows] Logi Options+ 와 PowerToys를 이용한 작업환경 빠르게 세팅하기"
-description: Setting Work Environment
+description: Quick Workspace Setup
 author: Minssuy99
 date: 2025-08-03 21:00:00 +0900
 categories: [Tip, Windows]
 tags: [Windows, Logitech, PowerToys]
 pin: false
-permalink: /posts/Setting-Work-Environment/
+permalink: /posts/Quick-Workspace-Setup/
 # math: false
 # mermaid: false
 image:
