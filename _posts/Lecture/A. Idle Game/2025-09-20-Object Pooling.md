@@ -2,7 +2,7 @@
 title: 2. Object Pooling
 description: Game Development
 author: Minssuy99
-date: 2025-09-10 11:00:00 +0900
+date: 2025-09-20 11:00:00 +0900
 categories: [Lecture, Idle Game]
 tags: [C#, Unity, Design Pattern]
 pin: false
