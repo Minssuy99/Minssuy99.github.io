@@ -53,7 +53,7 @@
 
   <title>
     {%- if page.layout == 'home' -%}
-      {{ site.title | append: ' | ' | append: site.tagline }}
+      {{ site.title | append: ' | ' | append: site.home_tab_tagline }}
     {%- else -%}
       {{ page.title | append: ' | ' | append: site.title }}
     {%- endif -%}
