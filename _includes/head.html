@@ -52,10 +52,12 @@
   <meta name="naver-site-verification" content="c046932035b7c7cb6999854d817ea586aa562c06" />
 
   <title>
-    {%- unless page.layout == 'home' -%}
-      {{ page.title | append: ' | ' }}
-    {%- endunless -%}
-    {{ site.title }}
+    {%- if page.layout == 'home' -%}
+      {{ site.title }}
+    {%- else -%}
+      {%- assign site_title_parts = site.title | split: ' | ' -%}
+      {{ page.title | append: ' | ' | append: site_title_parts[0] }}
+    {%- endif -%}
   </title>
 
   {% include_cached favicons.html %}
