@@ -53,10 +53,9 @@
 
   <title>
     {%- if page.layout == 'home' -%}
-      {{ site.title }}
+      {{ site.title | append: ' | ' | append: site.tagline }}
     {%- else -%}
-      {%- assign site_title_parts = site.title | split: ' | ' -%}
-      {{ page.title | append: ' | ' | append: site_title_parts[0] }}
+      {{ page.title | append: ' | ' | append: site.title }}
     {%- endif -%}
   </title>
 
