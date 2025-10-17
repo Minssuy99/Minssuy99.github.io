@@ -1,0 +1,298 @@
+---
+title: 4. Projectiles
+description: Game Development
+author: Minssuy99
+date: 2025-10-17 05:10:00 +0900
+categories: [Lecture, Idle Game]
+tags: [C#, Unity]
+pin: false
+math: true
+permalink : /posts/Projectiles
+published: true
+# mermaid: false
+image:
+  path: 'thumbnail.png'
+  lqip: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAFCAYAAAB8ZH1oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAGHaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIj48dGlmZjpPcmllbnRhdGlvbj4xPC90aWZmOk9yaWVudGF0aW9uPjwvcmRmOkRlc2NyaXB0aW9uPjwvcmRmOlJERj48L3g6eG1wbWV0YT4NCjw/eHBhY2tldCBlbmQ9J3cnPz4slJgLAAAAuklEQVQYVwXBMVLCQBSA4f9tNmZ3BAmCEXREL8DYyNBxBK28KS2FjYUHsHPGhgodZ4U40U3e+n1y//CYJtMZRZGjGqnThNwkju0XIQR+6gaTGYy1R1ibEWNL18FFlXPVbvGxxfdLytOS8fgMc30zo9evuKymbF+eeN6sOQxGfOx2FLHGe4dqh3FZzlAC5ymwWC1RsXzvD4jrEZMiSVA1mM+w5/XtncY5mqJifnuHJPCjAcme8PvXIqL8A2tTQzUc0zi5AAAAAElFTkSuQmCC
+  # alt:
+media_subpath: '/assets/img/posts/Lecture/A. Idle Game'
+---
+
+## _**목표**_
+---
+
+캐릭터가 적을 공격할 때 발사되는 불렛 시스템을 구현한다.
+
+불렛은 타겟을 향해 날아가며, 적에게 도달하면 데미지를 주고 타격 이펙트를 재생한 후 오브젝트 풀로 반환된다.
+
+앞으로 여러 캐릭러들이 추가되기에, 각 캐릭터의 불렛과 이펙트를 효율적으로 관리하기 위해 딕셔너리를 활용한다.
+
+<br>
+
+## _**구현**_
+---
+
+### _**Bullet.cs 스크립트 작성**_
+
+불렛은 타겟의 정보와 데미지를 가지고 있어야 한다.
+
+불렛이 생성되면 `Init` 함수를 통해 초기화가 이루어진다.
+
+```csharp
+public class Bullet : MonoBehaviour
+{
+    [SerializeField] private float m_Speed;
+    Transform m_Target;
+    Vector3 m_TargetPos;
+    double m_DMG;
+    
+    public void Init(Transform target, double dmg)
+    {
+        m_Target = target;
+        transform.LookAt(m_Target);
+        m_TargetPos = m_Target.position;
+        m_DMG = dmg;
+    }
+    
+    private void Update()
+    {
+        // 불렛을 타겟을 향해 움직임
+        transform.position = Vector3.MoveTowards(transform.position, m_TargetPos, Time.deltaTime * m_Speed);
+        
+        // 적에게 도달했다면
+        if(Vector3.Distance(transform.position, m_TargetPos) <= 0.1f)
+        {
+            if(m_Target != null) // 적이 있다면 체력을 데미지만큼 감소
+            {
+                m_Target.GetComponent<Character>().HP -= m_DMG;
+            }
+        }
+    }   
+}
+```
+{: file="Bullet.cs"}
+
+<br>
+
+### _**Bullet 프리팹 수정**_
+
+`Bullet` 프리팹의 자식으로 `Projectiles`와 `Muzzles`라는 빈 오브젝트를 만든다.
+
+`Projectiles`의 자식에는 불렛이 날아갈 때의 이펙트가, `Muzzles`의 자식에는 히트 이펙트가 들어간다.
+
+![img](2025-10-17-Bullet.png){: .shadow .rounded-10 .w-75 w="1200"}
+_Bullet Prefab_
+
+<br>
+
+### _**Bullet 관리 및 오브젝트 풀**_
+
+앞으로 추가될 캐릭터들의 발사체와 히트 이펙트를 담을 딕셔너리를 추가한다.
+
+```csharp
+public class Bullet : MonoBehaviour
+{
+    Dictionary<string, GameObject> m_Projectiles = new Dictionary<string, GameObject>();
+    Dictionary<string, ParticleSystem> m_Muzzles = new Dictionary<string, ParticleSystem>();
+}
+```
+{: file="Bullet.cs"}
+
+<br>
+
+`Bullet` 오브젝트 내부에 있는 발사체와 이펙트를 딕셔너리에 추가한다.
+
+```csharp
+public class Bullet : MonoBehaviour
+{
+    Dictionary<string, GameObject> m_Projectiles = new Dictionary<string, GameObject>();
+    Dictionary<string, ParticleSystem> m_Muzzles = new Dictionary<string, ParticleSystem>();
+        
+    private void Awake()
+    {
+        Transform projectiles = transform.GetChild(0);
+        Transform muzzles = transform.GetChild(1);
+        
+        for(int i = 0; i < projectiles.childCount; i++)
+        {
+            m_Projectiles.Add(projectiles.GetChild(i).name, projectiles.GetChild(i).gameObject);
+        }
+        
+        for(int i = 0; i < muzzles.childCount; i++)
+        {
+            m_Muzzles.Add(muzzles.GetChild(i).name, muzzles.GetChild(i).GetComponent<ParticleSystem>());
+        }
+    }
+}
+```
+{: file="Bullet.cs"}
+
+![img](2025-10-17-GetChild.png){: .shadow .rounded-10 .w-75 w="1200"}
+_GetChild_
+
+<br>
+
+게임이 시작될 때 모든 발사체와 이펙트를 비활성화하고, `Init` 함수가 실행될 때 해당 캐릭터의 것만 활성화한다.
+
+이펙트를 비활성화 하는 이유는, `Bullet` 오브젝트에는 여러 캐릭터의 발사체 이펙트가 존재하게 되는데, 처음부터 전부 켜져있으면 겹쳐서 보이기 때문이다.
+
+`Init` 함수는 오브젝트 풀에서 불렛을 최초로 꺼낼 때 실행되므로, 그때 활성화하는 것이 깔끔하다.
+
+```csharp
+string m_CharacterName;
+
+public void Init(Transform target, double dmg, string Character_Name)
+{
+    m_Target = target;
+    transform.LookAt(m_Target);
+    m_TargetPos = m_Target.position;
+    m_DMG = dmg;
+    
+    m_CharacterName = Character_Name;
+    m_Projectiles[m_CharacterName].gameObject.SetActive(true); // true
+}
+```
+{: file="Bullet.cs"}
+
+<br>
+
+적에게 맞았을 때는 발사체를 비활성화하고 타격 이펙트를 재생한다.
+
+```csharp
+private void Update()
+{
+    transform.position = Vector3.MoveTowards(transform.position, m_TargetPos, Time.deltaTime * m_Speed);
+    
+    if(Vector3.Distance(transform.position, m_TargetPos) <= 0.1f)
+    {
+        if(m_Target != null)
+        {
+            m_Target.GetComponent<Character>().HP -= m_DMG;
+            
+            m_Projectiles[m_CharacterName].gameObject.SetActive(false);
+            m_Muzzles[m_CharacterName].Play();
+            // why do not return this?
+        }
+    }
+}
+```
+{: file="Bullet.cs"}
+
+<br>
+
+여기서 바로 오브젝트 풀로 반환하지 않는 이유는 타격 이펙트가 재생될 시간이 필요하기 때문이다.
+
+코루틴을 통해 파티클의 재생 시간만큼 대기한 후 반환하도록 구현한다.
+
+```csharp
+private void Update()
+{
+    transform.position = Vector3.MoveTowards(transform.position, m_TargetPos, Time.deltaTime * m_Speed);
+    
+    if(Vector3.Distance(transform.position, m_TargetPos) <= 0.1f)
+    {
+        if(m_Target != null)
+        {
+            GetHit = true;
+            m_Target.GetComponent<Character>().HP -= m_DMG;
+            m_Projectiles[m_CharacterName].gameObject.SetActive(false);
+            m_Muzzles[m_CharacterName].Play();
+
+            StartCoroutine(ReturnObject(m_Muzzles[m_CharacterName].main.duration));
+        }
+    }
+}
+
+IEnumerator ReturnObject(float timer)
+{
+    yield return new WaitForSeconds(timer);
+    Base_Mng.Pool.m_pool_Dictionary["Bullet"].Return(this.gameObject);
+}
+```
+{: file="Bullet.cs"}
+`m_Muzzles[m_CharacterName].main.duration`은 파티클의 재생 시간을 의미한다.
+
+파티클 시스템의 인스펙터를 보면 `Duration` 파라미터가 있는데, 이 값을 가져오는 것이다.
+
+<br>
+
+`Character.cs`에서 선언한 `Bullet` 함수에도 `Init` 함수를 호출하도록 추가한다.
+
+```csharp
+protected virtual void Bullet()
+{
+    Base_Mng.Pool.Pooling_OBJ("Bullet").Get((value) =>
+    {
+        value.transform.position = m_BulletTransform.position;
+        value.GetComponent<Bullet>().Init(m_Target, 10, "CH_01");
+    });
+}
+```
+{: file="Character.cs"}
+
+<br>
+
+이 상태에서 게임을 시작하면 파티클이 즉시 재생되는데, 파티클 옵션의 `Play On Awake` 체크박스를 꺼야 한다.
+
+![img](2025-10-17-Play_On_Awake.gif){: .shadow .rounded-10 .w-75 w="1200"}
+_Play On Awake_
+
+<br>
+
+### _**타격 제한 추가**_
+
+현재 상태에서는 히트 이펙트가 과하게 반복 재생되는 문제가 있다.
+
+`bool` 변수를 추가하여 한 번만 타격이 일어나도록 제한한다.
+
+![img](2025-10-17-GetHit.gif){: .shadow .rounded-10 .w-75 w="1200"}
+_Repeat_
+
+```csharp
+public class Bullet : MonoBehaviour
+{
+    bool GetHit = false;
+    
+    public void Init(Transform target, double dmg, string Character_Name)
+    {
+        GetHit = false;
+        .
+        .
+        .
+    }
+    
+    private void Update()
+    {
+        if (GetHit) return; // true 라면 아래의 로직 실행x
+        m_TargetPos.y = 0.5f; // 히트 이펙트가 너무 바닥에 터져서 목표물의 y축 좌표를 조금 높힘
+
+        transform.position = Vector3.MoveTowards(transform.position, m_TargetPos, Time.deltaTime * m_Speed);
+        
+        if(Vector3.Distance(transform.position, m_TargetPos) <= 0.1f)
+        {
+            if(m_Target != null)
+            {
+                GetHit = true;
+                m_Target.GetComponent<Character>().HP -= m_DMG;
+                m_Projectiles[m_CharacterName].gameObject.SetActive(false);
+                m_Muzzles[m_CharacterName].Play();
+
+                StartCoroutine(ReturnObject(m_Muzzles[m_CharacterName].main.duration));
+            }
+        }
+    }
+}
+```
+{: file="Bullet.cs"}
+
+<br>
+
+## _**Result**_
+---
+
+불렛이 적을 향해 날아가고, 타격 시 이펙트가 재생된 후 오브젝트 풀로 반환되는 것을 확인할 수 있다.
+
+![img](2025-10-17-result.gif){: .shadow .rounded-10 .w-75 w="1200"}
+_Result_
+
+![img](2025-10-17-result2.gif){: .shadow .rounded-10 .w-75 w="1200"}
+_Object Pool_
