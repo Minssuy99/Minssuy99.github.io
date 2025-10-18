@@ -6,18 +6,22 @@
 
 - type: github
   icon: "fab fa-github"
+  title: "GitHub"
 
 - type: custom
   icon: "fa-regular fa-paper-plane"
   url: "https://minssuy99.vercel.app/"
+  title: "Portfolio"
 
 - type: custom
   icon: "fa-solid fa-paper-plane"
   url: "https://minssuy99.tistory.com/"
+  title: "PS Blog"
 
 - type: custom
   icon: "fa-solid fa-paper-plane"
   url: "https://minssuy99-notion.vercel.app/"
+  title: "DevLog"
 
 #- type: instagram
 #  icon: "fab fa-instagram"
