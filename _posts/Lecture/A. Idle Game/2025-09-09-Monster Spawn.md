@@ -8,7 +8,7 @@ tags: [C#, Unity]
 pin: false
 math: true
 permalink : /posts/Monster-Spawn
-published: true
+published: false
 # mermaid: false
 image:
   path: 'thumbnail.png'

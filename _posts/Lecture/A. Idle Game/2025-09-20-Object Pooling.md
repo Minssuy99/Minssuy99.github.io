@@ -8,7 +8,7 @@ tags: [C#, Unity, Design Pattern]
 pin: false
 math: true
 permalink : /posts/Object-Pooling
-published: true
+published: false
 # mermaid: false
 image:
   path: 'thumbnail.png'
