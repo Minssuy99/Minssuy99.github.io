@@ -25,6 +25,7 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+/claude.md
 
 
 Select_Language_Btn.txt
