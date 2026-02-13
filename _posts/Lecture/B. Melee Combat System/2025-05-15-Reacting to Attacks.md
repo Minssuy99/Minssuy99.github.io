@@ -8,6 +8,7 @@ tags: [C#, Unity]
 pin: false
 math: true
 permalink : /posts/Reacting-to-Attack
+published: false
 # mermaid: false
 image:
   path: 'thumbnail.jpg'
